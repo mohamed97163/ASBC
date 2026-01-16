@@ -1,0 +1,132 @@
+.certifications {
+  background: linear-gradient(135deg, #0a4d68 0%, #0f4c81 30%, #1a6cb5 60%, #00a8e8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(30deg, rgba(255, 255, 255, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.05) 87.5%, rgba(255, 255, 255, 0.05));
+  background-size: 80px 140px;
+  z-index: 0;
+}
+
+.certifications .container {
+  position: relative;
+  z-index: 1;
+}
+
+.certifications .section-title h2,
+.certifications .section-title p {
+  color: white;
+}
+
+.certifications .section-title::after {
+  background: linear-gradient(135deg, #ffd700, #00ffff);
+}
+
+.certifications-grid {
+  margin-top: 3rem;
+}
+
+.certification-card {
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out backwards;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: var(--transition);
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.certification-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(135deg, #ffd700, #00ffff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition);
+}
+
+.certification-card:hover::before {
+  transform: scaleX(1);
+}
+
+.certification-card:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.cert-header {
+  margin-bottom: 1.5rem;
+}
+
+.cert-number {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--gradient-1);
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+  box-shadow: 0 4px 15px rgba(15, 76, 129, 0.3);
+}
+
+.certification-card h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.cert-name-ar {
+  font-size: 1.05rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  direction: rtl;
+  line-height: 1.6;
+}
+
+.cert-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .cert-number {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .certification-card h3 {
+    font-size: 1.1rem;
+  }
+}
