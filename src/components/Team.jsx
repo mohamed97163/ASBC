@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import team1 from '../assets/team1.png';
-import team2 from '../assets/team2.png';
-import team3 from '../assets/team3.png';
-import team4 from '../assets/team4.png';
+import team1 from '../assets/team1.jpeg';
+import team2 from '../assets/team2.jpeg';
+import team3 from '../assets/team3.jpeg';
+import team4 from '../assets/team4.jpeg';
 import './Team.css';
 
 const Team = () => {
@@ -23,7 +23,7 @@ const Team = () => {
       nameAr: 'محمد الجمل',
       role: 'Senior Backend Developer',
       roleAr: 'مطور واجهة خلفية أول',
-      image: team1,
+      image: team2,
       bio: 'Expert in enterprise solutions & innovation',
       bioAr: 'خبيرة في الحلول المؤسسية والابتكار'
     },
@@ -37,10 +37,10 @@ const Team = () => {
       bioAr: 'مطور واجهة أمامية أول'
     },
     {
-      name: 'Lotfy Abdallah',
-      nameAr:'لطفي عبد الله',
-      role: 'UI/UX Designer',
-      roleAr: 'مصمم واجهة المستخدم',
+      name: 'Mohamed Iissa',
+      nameAr:'محمد عيسي',
+      role: 'Senior Flutter Developer',
+      roleAr: 'مطور تطبيقات موبايل اول',
       image: team4,
       bio: 'Strategic partnerships & growth expert',
       bioAr: 'خبير في الشراكات الاستراتيجية والنمو'
@@ -54,8 +54,8 @@ const Team = () => {
           <h2>{isArabic ? 'تعرف على فريقنا' : 'Meet Our Team'}</h2>
           <p style={{ color: 'white', marginTop: '1rem', maxWidth: '600px', margin: '1rem auto 0' }}>
             {isArabic 
-              ? 'فريقنا المتنوع من المحترفين السعوديين يجلب الخبرة والابتكار والتفاني لكل مشروع'
-              : 'Our diverse team of Saudi professionals brings expertise, innovation, and dedication to every project'
+              ? 'فريقنا المتنوع من المحترفين يجلب الخبرة والابتكار والتفاني لكل مشروع'
+              : 'Our diverse team of professionals brings expertise, innovation, and dedication to every project'
             }
           </p>
         </div>
