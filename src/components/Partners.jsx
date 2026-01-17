@@ -1,85 +1,98 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { 
-  FaIndustry, FaMobileAlt, FaBuilding, FaShoppingCart, FaCar, FaUtensils,
-  FaBox, FaBriefcase, FaShieldAlt, FaCreditCard, FaMoneyBillWave, FaCarSide
+  FaCreditCard, FaMobileAlt, FaFileInvoice, FaCloud, FaLock, 
+  FaDatabase, FaMapMarkedAlt, FaChartLine, FaEnvelope, 
+  FaServer, FaUserShield, FaShippingFast
 } from 'react-icons/fa';
 import './Partners.css';
 
 const Partners = () => {
   const { isArabic } = useLanguage();
-  const partners = [
+  const integrations = [
     { 
-      name: 'Saudi Aramco', 
-      nameAr: 'أرامكو السعودية',
-      Icon: FaIndustry,
-      category: 'Energy'
-    },
-    { 
-      name: 'STC',
-      nameAr: 'الاتصالات السعودية', 
-      Icon: FaMobileAlt,
-      category: 'Telecom'
-    },
-    { 
-      name: 'SABIC', 
-      nameAr: 'سابك',
-      Icon: FaBuilding,
-      category: 'Manufacturing'
-    },
-    { 
-      name: 'Noon', 
-      nameAr: 'نون',
-      Icon: FaShoppingCart,
-      category: 'E-Commerce'
-    },
-    { 
-      name: 'Careem',
-      nameAr: 'كريم',
-      Icon: FaCar,
-      category: 'Transportation'
-    },
-    { 
-      name: 'Jahez', 
-      nameAr: 'جاهز',
-      Icon: FaUtensils,
-      category: 'Food Delivery'
-    },
-    { 
-      name: 'Mrsool',
-      nameAr: 'مرسول',
-      Icon: FaBox,
-      category: 'Delivery'
-    },
-    { 
-      name: 'Elm', 
-      nameAr: 'علم',
-      Icon: FaBriefcase,
-      category: 'Digital Solutions'
-    },
-    { 
-      name: 'Tahakom',
-      nameAr: 'تحاكم',
-      Icon: FaShieldAlt,
-      category: 'Cybersecurity'
-    },
-    { 
-      name: 'Lean',
-      nameAr: 'لين',
+      name: 'Mada Payment Gateway', 
+      nameAr: 'بوابة مدى للدفع',
       Icon: FaCreditCard,
-      category: 'Fintech'
+      category: 'Payment',
+      description: 'Local payment processing'
     },
     { 
-      name: 'Tamara',
-      nameAr: 'تمارا',
-      Icon: FaMoneyBillWave,
-      category: 'Payment'
+      name: 'SMS Gateway',
+      nameAr: 'بوابة الرسائل القصيرة', 
+      Icon: FaMobileAlt,
+      category: 'Communications',
+      description: 'OTP & notifications'
     },
     { 
-      name: 'Seez',
-      nameAr: 'سيز',
-      Icon: FaCarSide,
-      category: 'Automotive'
+      name: 'E-Invoice Platform', 
+      nameAr: 'منصة الفوترة الإلكترونية',
+      Icon: FaFileInvoice,
+      category: 'E-Invoice',
+      description: 'ZATCA integration'
+    },
+    { 
+      name: 'Cloud Storage', 
+      nameAr: 'التخزين السحابي',
+      Icon: FaCloud,
+      category: 'Storage',
+      description: 'Secure file storage'
+    },
+    { 
+      name: 'Nafath Authentication',
+      nameAr: 'نفاذ الوطني',
+      Icon: FaLock,
+      category: 'Authentication',
+      description: 'National SSO'
+    },
+    { 
+      name: 'Database Service', 
+      nameAr: 'خدمة قواعد البيانات',
+      Icon: FaDatabase,
+      category: 'Database',
+      description: 'Managed databases'
+    },
+    { 
+      name: 'Maps & Location API',
+      nameAr: 'خدمة الخرائط والموقع',
+      Icon: FaMapMarkedAlt,
+      category: 'Location',
+      description: 'Geolocation services'
+    },
+    { 
+      name: 'Analytics Platform', 
+      nameAr: 'منصة التحليلات',
+      Icon: FaChartLine,
+      category: 'Analytics',
+      description: 'Business intelligence'
+    },
+    { 
+      name: 'Email Service',
+      nameAr: 'خدمة البريد الإلكتروني',
+      Icon: FaEnvelope,
+      category: 'Email',
+      description: 'Email delivery'
+    },
+    { 
+      name: 'CDN Service',
+      nameAr: 'شبكة توزيع المحتوى',
+      Icon: FaServer,
+      category: 'CDN',
+      description: 'Content delivery'
+    },
+    { 
+      name: 'Social Login',
+      nameAr: 'تسجيل الدخول الاجتماعي',
+      Icon: FaUserShield,
+      category: 'OAuth',
+      description: 'Social authentication'
+    },
+    { 
+      name: 'Delivery API',
+      nameAr: 'واجهة خدمات التوصيل',
+      Icon: FaShippingFast,
+      category: 'Logistics',
+      description: 'Shipping integration'
     }
   ];
 
@@ -87,18 +100,18 @@ const Partners = () => {
     <section id="partners" className="partners">
       <div className="container">
         <div className="section-title">
-          <h2>{isArabic ? 'شركاؤنا الموثوقون' : 'Our Trusted Partners'}</h2>
+          <h2>{isArabic ? 'التكاملات التقنية' : 'Technology Integrations'}</h2>
           <p style={{ color: 'white', marginTop: '1rem', maxWidth: '700px', margin: '1rem auto 0' }}>
             {isArabic 
-              ? 'نتعاون مع كبرى الشركات السعودية والإقليمية لقيادة الابتكار الرقمي'
-              : 'Collaborating with leading Saudi and regional enterprises to drive digital innovation'
+              ? 'نتكامل مع أفضل الخدمات والمنصات التقنية العالمية لتقديم حلول متطورة وموثوقة'
+              : 'Seamlessly integrating with world-class platforms and services to deliver powerful, reliable solutions'
             }
           </p>
         </div>
 
         <div className="partners-grid grid grid-4">
-          {partners.map((partner, index) => {
-            const IconComponent = partner.Icon;
+          {integrations.map((integration, index) => {
+            const IconComponent = integration.Icon;
             return (
               <div 
                 key={index} 
@@ -107,8 +120,8 @@ const Partners = () => {
               >
                 <IconComponent className="partner-logo" />
                 <div className="partner-info">
-                  <h4>{isArabic ? partner.nameAr : partner.name}</h4>
-                  <span className="partner-category">{partner.category}</span>
+                  <h4>{isArabic ? integration.nameAr : integration.name}</h4>
+                  <span className="partner-category">{integration.category}</span>
                 </div>
               </div>
             );
