@@ -9,12 +9,23 @@ import team6 from '../assets/team6.jpeg';
 import team7 from '../assets/team7.png';
 import team8 from '../assets/team8.jpeg';
 import team9 from '../assets/team9.jpeg';
+import team10 from '../assets/team10.jpeg';
+import team11 from '../assets/team11.jpeg';
 
 import './Team.css';
 
 const Team = () => {
   const { isArabic } = useLanguage();
   const teamMembers = [
+    {
+      name: 'Mohamed Elgamal',
+      nameAr: 'محمد الجمل',
+      role: 'Project Manager and Bussiness Analysis and system design',
+      roleAr: 'مدير المشروع وتحليل الأعمال وتصميم النظام',
+      image: team2,
+      bio: 'A Project Manager and Business Analyst experienced in managing technical projects, analyzing business requirements, and designing efficient systems to deliver high-quality solutions aligned with business goals.',
+      bioAr: 'مدير مشاريع ومحلل أعمال يمتلك خبرة في إدارة المشاريع التقنية وتحليل متطلبات الأعمال وتصميم أنظمة فعّالة تحقق أهداف العمل بجودة عالية.'
+    },
     {
       name: 'Fahd Mahmoud',
       nameAr: 'فهد محمود',
@@ -34,13 +45,13 @@ const Team = () => {
       bioAr: 'ذو خبره كبيره في مجال الامن السيبراني ضد الهجات الالكترونيه وحمايةالانظمة والبيانات'
     },
     {
-      name: 'Mohamed Elgamal',
-      nameAr: 'محمد الجمل',
+      name: 'Islam Walied',
+      nameAr: 'إسلام وليد',
       role: 'Senior Backend Developer',
       roleAr: 'مطور واجهة خلفية أول',
-      image: team2,
-      bio: 'Expert in enterprise solutions & innovation',
-      bioAr: 'خبيرة في الحلول المؤسسية والابتكار'
+      image: team10,
+      bio: 'A SeniorBackend Developer with experience in building and developing robust, secure, and scalable systems and services.',
+      bioAr: 'مطور واجهة خلفية اول يمتلك خبرة في بناء وتطوير الأنظمة والخدمات البرمجية بكفاءة عالية مع ضمان الأداء والأمان وقابلية التوسع.'
     },
     {
       name: 'Abdurahman Samir',
@@ -95,6 +106,15 @@ const Team = () => {
       image: team8,
       bio: 'A data analyst and artificial intelligence engineer with experience in developing predictive models and analytical dashboards that support strategic decisions.',
       bioAr: 'محلل بيانات ومهندس ذكاء اصطناعي ذو خبرة في تطوير نماذج تنبؤية ولوحات معلومات تحليلية تدعم القرارات الاستراتيجية.'
+    },
+    {
+      name: 'Mohamed Essam',
+      nameAr:'محمد عصام',
+      role: 'Software Test Engineer',
+      roleAr: 'مهندس اختبار نظم',
+      image: team11,
+      bio: 'Detail-oriented Software Tester with a background in Flutter development and strong knowledge in manual testing, bug reporting, and agile methodologies. Passionate about ensuring quality in mobile and web applications',
+      bioAr: 'مختبر برمجيات دقيق ومنظم، لديه خبرة في تطوير تطبيقات Flutter ومعرفة واسعة في:الاختبار اليدوي، والإبلاغ عن الأخطاء، ومنهجيات التطوير الرشيقة. شغوف بضمان جودة تطبيقات الجوال والويب.'
     }
   ];
 
@@ -111,7 +131,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="team-grid grid grid-5">
+        <div className="team-grid grid grid-4">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 

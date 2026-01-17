@@ -295,9 +295,9 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.grid-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
+
+
+
 
 /* Utility Classes */
 .text-center {
