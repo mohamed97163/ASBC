@@ -38,15 +38,15 @@ const Hero = () => {
 
             <div className="hero-stats-mini">
               <div className="mini-stat">
-                <span className="mini-stat-number">500+</span>
+                <span className="mini-stat-number">50+</span>
                 <span className="mini-stat-label">{isArabic ? 'مشروع' : 'Projects'}</span>
               </div>
               <div className="mini-stat">
-                <span className="mini-stat-number">15+</span>
+                <span className="mini-stat-number">10+</span>
                 <span className="mini-stat-label">{isArabic ? 'سنة' : 'Years'}</span>
               </div>
               <div className="mini-stat">
-                <span className="mini-stat-number">300+</span>
+                <span className="mini-stat-number">50+</span>
                 <span className="mini-stat-label">{isArabic ? 'عميل' : 'Clients'}</span>
               </div>
               <div className="mini-stat">

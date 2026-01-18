@@ -14,10 +14,10 @@ const Stats = () => {
   const statsRef = useRef(null);
 
   const stats = [
-    { key: 'projects', icon: '🚀', target: 500, label: 'Projects Completed', labelAr: 'مشروع منجز', suffix: '+' },
+    { key: 'projects', icon: '🚀', target: 50, label: 'Projects Completed', labelAr: 'مشروع منجز', suffix: '+' },
     { key: 'services', icon: '⚡', target: 15, label: 'Services Offered', labelAr: 'خدمة مقدمة', suffix: '+' },
-    { key: 'employees', icon: '👥', target: 100, label: 'Team Members', labelAr: 'عضو فريق', suffix: '+' },
-    { key: 'clients', icon: '🤝', target: 300, label: 'Satisfied Clients', labelAr: 'عميل راضٍ', suffix: '+' }
+    { key: 'employees', icon: '👥', target: 10, label: 'Team Members', labelAr: 'عضو فريق', suffix: '+' },
+    { key: 'clients', icon: '🤝', target: 50, label: 'Satisfied Clients', labelAr: 'عميل راضٍ', suffix: '+' }
   ];
 
   useEffect(() => {

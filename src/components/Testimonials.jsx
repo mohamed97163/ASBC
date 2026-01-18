@@ -8,8 +8,8 @@ const Testimonials = () => {
     {
       text: 'Working with ASBC was a game-changer for our business. Their expertise and dedication delivered exceptional results.',
       textAr: 'العمل مع منارة الحلول العربية كان تغييرًا جذريًا لأعمالنا. خبرتهم وتفانيهم حققا نتائج استثنائية.',
-      author: 'Mohammed Al-Khalidi',
-      authorAr: 'محمد الخالدي',
+      author: 'Mohammed Al-Habsi',
+      authorAr: 'محمد الحبسي',
       company: 'Tech Innovations KSA',
       companyAr: 'الابتكارات التقنية السعودية',
       rating: 5

@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Team from './components/Team';
 import Partners from './components/Partners';
-import Testimonials from './components/Testimonials';
+
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -27,7 +27,7 @@ function App() {
         <Certifications />
         <Team />
         <Partners />
-        <Testimonials />
+
         <Contact />
         <Footer />
       </div>

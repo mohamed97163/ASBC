@@ -2,13 +2,14 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { 
   FaReact, FaVuejs, FaAngular, FaNodeJs, FaPython, FaPhp, FaJava,
-  FaApple, FaAndroid, FaAws, FaDocker, FaFigma, FaMicrosoft 
+  FaApple, FaAndroid, FaAws, FaDocker, FaFigma, FaMicrosoft, FaShieldAlt
 } from 'react-icons/fa';
 import { 
   SiNextdotjs, SiTypescript, SiTailwindcss, SiExpress, SiDjango,
   SiFlutter, SiMongodb, SiMysql, SiPostgresql, SiRedis, SiFirebase,
   SiGooglecloud, SiKubernetes, SiAdobexd, SiSketch, 
-  SiAdobephotoshop
+  SiAdobephotoshop, SiKalilinux, SiWireshark, SiBurpsuite, 
+  SiSonarqube, SiOwasp
 } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import { MdIntegrationInstructions } from 'react-icons/md';
@@ -88,6 +89,19 @@ const TechStack = () => {
         { name: 'Adobe XD', Icon: SiAdobexd },
         { name: 'Sketch', Icon: SiSketch },
         { name: 'Photoshop', Icon: SiAdobephotoshop }
+      ]
+    },
+    {
+      category: 'Cybersecurity',
+      categoryAr: 'الأمن السيبراني',
+      gradient: 'linear-gradient(135deg, #200122 0%, #6f0000 100%)',
+      techs: [
+        { name: 'Kali Linux', Icon: SiKalilinux },
+        { name: 'Wireshark', Icon: SiWireshark },
+        { name: 'Burp Suite', Icon: SiBurpsuite },
+        { name: 'SonarQube', Icon: SiSonarqube },
+        { name: 'OWASP', Icon: SiOwasp },
+        { name: 'Net Security', Icon: FaShieldAlt }
       ]
     }
   ];

@@ -47,12 +47,12 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', Icon: FaFacebookF, url: 'https://facebook.com', color: '#1877f2' },
-    { name: 'Instagram', Icon: FaInstagram, url: 'https://instagram.com', color: '#e4405f' },
-    { name: 'LinkedIn', Icon: FaLinkedinIn, url: 'https://linkedin.com', color: '#0077b5' },
-    { name: 'Twitter', Icon: FaTwitter, url: 'https://twitter.com', color: '#1da1f2' },
-    { name: 'TikTok', Icon: FaTiktok, url: 'https://tiktok.com', color: '#000000' },
-    { name: 'Snapchat', Icon: FaSnapchatGhost, url: 'https://snapchat.com', color: '#fffc00' }
+    { name: 'Facebook', Icon: FaFacebookF, url: 'https://web.facebook.com/profile.php?id=61584469807922', color: '#1877f2' },
+    // { name: 'Instagram', Icon: FaInstagram, url: 'https://instagram.com', color: '#e4405f' },
+    { name: 'LinkedIn', Icon: FaLinkedinIn, url: 'https://www.linkedin.com/company/arabian-solutions-beacon', color: '#0077b5' },
+    // { name: 'Twitter', Icon: FaTwitter, url: 'https://twitter.com', color: '#1da1f2' },
+    // { name: 'TikTok', Icon: FaTiktok, url: 'https://tiktok.com', color: '#000000' },
+    // { name: 'Snapchat', Icon: FaSnapchatGhost, url: 'https://snapchat.com', color: '#fffc00' }
   ];
 
 
