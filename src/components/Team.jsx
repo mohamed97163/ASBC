@@ -122,8 +122,8 @@ const Team = () => {
     {
       name: 'Mohamed Almetwally',
       nameAr:'محمد المتولي',
-      role: 'Graphic Designer',
-      roleAr: 'مصمم',
+      role: 'Ai Engineer & Data Analyst',
+      roleAr: 'مهندس ذكاء اصطناعي ومحلل بيانات',
       image: team8,
       bio: 'A data analyst and artificial intelligence engineer with experience in developing predictive models and analytical dashboards that support strategic decisions.',
       bioAr: 'محلل بيانات ومهندس ذكاء اصطناعي ذو خبرة في تطوير نماذج تنبؤية ولوحات معلومات تحليلية تدعم القرارات الاستراتيجية.'
@@ -152,7 +152,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="team-grid grid grid-4">
+        <div className="team-grid grid grid-5">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
