@@ -11,6 +11,7 @@ import team8 from '../assets/team8.jpeg';
 import team9 from '../assets/team9.jpeg';
 import team10 from '../assets/team10.jpeg';
 import team11 from '../assets/team11.jpeg';
+import team from '../assets/team.png';
 
 import './Team.css';
 
@@ -18,10 +19,19 @@ const Team = () => {
   const { isArabic } = useLanguage();
   const teamMembers = [
     {
+      name: 'MR.REZK ABDELRAHMAN MOHAMED',
+      nameAr: 'رزق عبدالرحمن محمد',
+      role: 'CEO',
+      roleAr: 'الرئيس التنفيذي',
+      image: team,
+      bio: 'He is the founder of the company and the one who established it with his own efforts. He is a successful businessman who has achieved many successes in his life.',
+      bioAr: 'هو مؤسس الشركة وصاحب الفكرة وهو من قام بتأسيسها بجهوده الذاتية وهو رجل اعمال ناجح حقق العديد من النجاحات في حياته'
+    },
+    {
       name: 'Mohamed Elgamal',
       nameAr: 'محمد الجمل',
-      role: 'Project Manager and Bussiness Analysis and system design',
-      roleAr: 'مدير المشروع وتحليل الأعمال وتصميم النظام',
+      role: 'Project Manager and Bussiness Analyst and system Designer',
+      roleAr: 'مدير المشروع ومحلل الأعمال ومصمم النظم',
       image: team2,
       bio: 'A Project Manager and Business Analyst experienced in managing technical projects, analyzing business requirements, and designing efficient systems to deliver high-quality solutions aligned with business goals.',
       bioAr: 'مدير مشاريع ومحلل أعمال يمتلك خبرة في إدارة المشاريع التقنية وتحليل متطلبات الأعمال وتصميم أنظمة فعّالة تحقق أهداف العمل بجودة عالية.'
@@ -131,7 +141,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="team-grid grid grid-4">
+        <div className="team-grid grid grid-5">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
