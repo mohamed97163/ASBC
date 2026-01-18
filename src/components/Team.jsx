@@ -11,7 +11,8 @@ import team8 from '../assets/team8.jpeg';
 import team9 from '../assets/team9.jpeg';
 import team10 from '../assets/team10.jpeg';
 import team11 from '../assets/team11.jpeg';
-import team from '../assets/team.png';
+import team from '../assets/team.jpg';
+
 
 import './Team.css';
 
@@ -141,7 +142,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="team-grid grid grid-5">
+        <div className="team-grid grid grid-4">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
