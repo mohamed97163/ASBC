@@ -11,6 +11,7 @@ import team8 from '../assets/team8.jpeg';
 import team9 from '../assets/team9.jpeg';
 import team10 from '../assets/team10.jpeg';
 import team11 from '../assets/team11.jpeg';
+import team12 from '../assets/team12.jpeg';
 import team from '../assets/team.jpg';
 
 
@@ -27,6 +28,15 @@ const Team = () => {
       image: team,
       bio: 'He is the founder of the company and the one who established it with his own efforts. He is a successful businessman who has achieved many successes in his life.',
       bioAr: 'هو مؤسس الشركة وصاحب الفكرة وهو من قام بتأسيسها بجهوده الذاتية وهو رجل اعمال ناجح حقق العديد من النجاحات في حياته'
+    },
+    {
+      name: 'MR.Ahmed AlWardani AlAbd',
+      nameAr: 'أحمد الورداني العبد',
+      role: 'Technical Coordinator',
+      roleAr: 'المنسق التقني',
+      image: team12,
+      bio: 'He is a Technical Coordinator with experience in managing technical projects, analyzing business requirements, and designing efficient systems to deliver high-quality solutions aligned with business goals.',
+      bioAr: 'هو منسق تقني يمتلك خبرة في إدارة المشاريع التقنية وتحليل متطلبات الأعمال وتصميم أنظمة فعّالة تحقق أهداف العمل بجودة عالية.'
     },
     {
       name: 'Mohamed Elgamal',
