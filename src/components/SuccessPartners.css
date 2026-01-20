@@ -1,0 +1,130 @@
+.success-partners {
+  padding: var(--section-padding) 0;
+  background: linear-gradient(135deg, #1a6cb5 0%, #0f4c81 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.success-partners::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%);
+  background-size: 60px 60px;
+  opacity: 0.6;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--border-radius);
+  transition: all var(--transition);
+  min-height: 160px;
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 215, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.partner-logo {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.partner-card:hover .partner-logo {
+  transform: scale(1.15);
+}
+
+.partner-name {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.partners-note {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.partners-note p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 968px) {
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .partner-card {
+    padding: 2rem 1rem;
+    min-height: 140px;
+  }
+
+  .partner-logo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .partner-card {
+    padding: 1.5rem 1rem;
+    min-height: 120px;
+  }
+
+  .partner-logo {
+    font-size: 2.5rem;
+  }
+
+  .partner-name {
+    font-size: 0.9rem;
+  }
+}

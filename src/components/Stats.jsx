@@ -14,10 +14,10 @@ const Stats = () => {
   const statsRef = useRef(null);
 
   const stats = [
-    { key: 'projects', icon: '🚀', target: 50, label: 'Projects Completed', labelAr: 'مشروع منجز', suffix: '+' },
+    { key: 'projects', icon: '🚀', target: 50, label: 'Successful Projects in Government and Private Sectors', labelAr: 'مشروع ناجح في قطاعات حكومية وخاصة', suffix: '+' },
     { key: 'services', icon: '⚡', target: 15, label: 'Services Offered', labelAr: 'خدمة مقدمة', suffix: '+' },
     { key: 'employees', icon: '👥', target: 10, label: 'Team Members', labelAr: 'عضو فريق', suffix: '+' },
-    { key: 'clients', icon: '🤝', target: 50, label: 'Satisfied Clients', labelAr: 'عميل راضٍ', suffix: '+' }
+    { key: 'clients', icon: '🏆', target: 100, label: 'Our Clients\' Trust is Our Priority', labelAr: 'ثقة عملائنا أولويتنا', suffix: '%' }
   ];
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Stats = () => {
     <section className="stats" ref={statsRef}>
       <div className="container">
         <div className="section-title">
-          <h2>{isArabic ? 'تأثيرنا بالأرقام' : 'Our Impact in Numbers'}</h2>
+          <h2 style={{ marginTop: '1.5rem' }}>{isArabic ? 'تأثيرنا بالأرقام' : 'Our Impact in Numbers'}</h2>
         </div>
 
         <div className="stats-grid grid grid-4">

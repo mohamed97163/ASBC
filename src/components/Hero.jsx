@@ -20,19 +20,33 @@ const Hero = () => {
       <div className="hero-container-wide">
         <div className="hero-content">
           <div className="hero-text animate-fadeInUp">
+            {/* Saudi Identity Statement */}
+            <div className="hero-identity">
+              <span className="identity-badge">
+                {isArabic ? '🇸🇦 شركة سعودية رائدة في حلول التحول الرقمي' : '🇸🇦 A Leading Saudi Company in Digital Transformation Solutions'}
+              </span>
+            </div>
+
             <h1>
               <span className="hero-title-main">
                 {isArabic ? 'منارة الحلول العربية' : 'Arabian Solutions Beacon'}
               </span>
               <span className="hero-title-gradient">
-                {isArabic ? 'نُضيء طريق التميز الرقمي' : 'Illuminating Digital Excellence'}
+                {isArabic ? 'نقود التحول الرقمي في المملكة' : 'Leading Digital Transformation in the Kingdom'}
               </span>
             </h1>
             
             <p className="hero-description">
               {isArabic 
-                ? 'نحوّل أعمالك بحلول تقنية متطورة. نمكّن المؤسسات في جميع أنحاء السعودية ومنطقة الخليج بالبرمجيات المبتكرة وتطبيقات الجوال واستراتيجيات التحول الرقمي.'
-                : 'Transform your business with cutting-edge technology solutions. We empower enterprises across Saudi Arabia and the Gulf region with innovative software, mobile apps, and digital transformation strategies.'
+                ? 'نمكّن الجهات الحكومية والشركات السعودية بحلول تقنية مبتكرة وآمنة'
+                : 'Empowering Saudi government entities and companies with innovative and secure technical solutions'
+              }
+            </p>
+            
+            <p className="hero-subtext">
+              {isArabic 
+                ? 'خبرة محلية، معايير عالمية، نتائج موثوقة - نواكب مستهدفات التحول الرقمي في رؤية السعودية 2030'
+                : 'Local expertise, global standards, trusted results - Aligning with Saudi Vision 2030 digital transformation goals'
               }
             </p>
 

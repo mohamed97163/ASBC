@@ -110,7 +110,7 @@ const TechStack = () => {
     <section className="tech-stack">
       <div className="container">
         <div className="section-title">
-          <h2>{isArabic ? 'التقنيات التي نتقنها' : 'Technologies We Master'}</h2>
+          <h2 style={{ marginTop: '1rem' }}>{isArabic ? 'التقنيات التي نتقنها' : 'Technologies We Master'}</h2>
           <p style={{ color: 'white', marginTop: '1rem', maxWidth: '700px', margin: '1rem auto 0' }}>
             {isArabic 
               ? 'مجموعة تقنية حديثة تدعم الحلول الرقمية المبتكرة'

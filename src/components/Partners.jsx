@@ -100,7 +100,7 @@ const Partners = () => {
     <section id="partners" className="partners">
       <div className="container">
         <div className="section-title">
-          <h2>{isArabic ? 'التكاملات التقنية' : 'Technology Integrations'}</h2>
+          <h2 style={{ marginTop: '1rem' }}>{isArabic ? 'التكاملات التقنية' : 'Technology Integrations'}</h2>
           <p style={{ color: 'white', marginTop: '1rem', maxWidth: '700px', margin: '1rem auto 0' }}>
             {isArabic 
               ? 'نتكامل مع أفضل الخدمات والمنصات التقنية العالمية لتقديم حلول متطورة وموثوقة'

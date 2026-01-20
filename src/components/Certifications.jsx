@@ -54,7 +54,7 @@ const Certifications = () => {
     <section className="certifications">
       <div className="container">
         <div className="section-title">
-          <h2>{isArabic ? 'الشهادات والشراكات' : 'Certifications & Partnerships'}</h2>
+          <h2 style={{ marginTop: '1rem' }}>{isArabic ? 'الشهادات والشراكات' : 'Certifications & Partnerships'}</h2>
           <p style={{ color: 'white', marginTop: '1rem' }}>
             {isArabic 
               ? 'تميز معترف به وشراكات موثوقة تقود الابتكار'

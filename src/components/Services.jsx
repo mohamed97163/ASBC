@@ -13,22 +13,22 @@ const Services = () => {
       Icon: FaGlobe,
       title: 'Web & Mobile Development',
       titleAr: 'تطوير المواقع والتطبيقات',
-      description: 'Custom website and mobile application design and development tailored to your business needs.',
-      descriptionAr: 'تصميم وتطوير مواقع الويب والتطبيقات المحمولة حسب احتياجات عملك.'
+      description: 'Design and development of websites and applications according to government standards and Saudi market requirements.',
+      descriptionAr: 'تصميم وتطوير مواقع وتطبيقات وفق معايير الجهات الحكومية والسوق السعودي.'
     },
     {
       Icon: FaCogs,
       title: 'CRM & ERP Systems',
       titleAr: 'أنظمة إدارة العملاء والموارد',
-      description: 'Comprehensive CRM and ERP system design and development for all types of departments.',
-      descriptionAr: 'تصميم وتطوير أنظمة CRM و ERP شاملة لجميع أنواع الأقسام داخل الشركة.'
+      description: 'Comprehensive CRM and ERP systems designed to enhance efficiency and meet the needs of Saudi organizations.',
+      descriptionAr: 'أنظمة CRM و ERP شاملة مصممة لتعزيز الكفاءة وتلبية احتياجات المؤسسات السعودية.'
     },
     {
       Icon: FaCode,
       title: 'Custom Software',
       titleAr: 'برمجيات مخصصة',
-      description: 'Bespoke software development solutions precisely tailored to your specific requirements.',
-      descriptionAr: 'حلول تطوير برمجيات مخصصة تتناسب تماماً مع متطلباتك الخاصة.'
+      description: 'Tailored software solutions that meet your unique business requirements with the highest quality standards.',
+      descriptionAr: 'حلول برمجية مخصصة تلبي متطلبات أعمالك الفريدة بأعلى معايير الجودة.'
     },
     {
       Icon: FaLink,
@@ -48,8 +48,8 @@ const Services = () => {
       Icon: FaBullseye,
       title: 'Digital Solutions',
       titleAr: 'الحلول الرقمية',
-      description: 'Comprehensive digital solutions and technical consulting for your business growth.',
-      descriptionAr: 'حلول رقمية شاملة واستشارات فنية لنمو أعمالك.'
+      description: 'Integrated digital transformation solutions supporting Vision 2030 and your organization\'s growth.',
+      descriptionAr: 'حلول تحول رقمي متكاملة تدعم رؤية 2030 ونمو مؤسستك.'
     },
     {
       Icon: FaMobileAlt,

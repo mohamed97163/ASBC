@@ -3,6 +3,8 @@
   color: var(--text-light);
   position: relative;
   overflow: hidden;
+  padding-top: 0%;
+  padding-bottom: 3%;
 }
 
 .stats::before {

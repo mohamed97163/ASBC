@@ -2,6 +2,7 @@
   background: linear-gradient(135deg, #0a4d68 0%, #0f4c81 30%, #1a6cb5 60%, #00a8e8 100%);
   position: relative;
   overflow: hidden;
+  padding-top: 0%;
 }
 
 .projects::before {
@@ -81,11 +82,26 @@
   font-weight: 600;
 }
 
+.project-client,
+.project-type {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.project-client strong,
+.project-type strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
 .project-description {
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 .project-description-ar {
